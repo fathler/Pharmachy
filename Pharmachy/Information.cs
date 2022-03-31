@@ -14,9 +14,6 @@ namespace Pharmachy
 {
     public partial class Information : Form
     {
-        public BindingSource binder1 = new BindingSource();
-        
-        
         public Information()
         {
             InitializeComponent();

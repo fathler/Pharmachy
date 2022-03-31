@@ -190,6 +190,10 @@
       <Project>{d413895d-7780-406c-b447-644dee83c8b1}</Project>
       <Name>PharmachyDAL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PharmachyEntity\PharmachyEntity.csproj">
+      <Project>{9208d9f2-6620-44db-8cd3-410c18d69557}</Project>
+      <Name>PharmachyEntity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

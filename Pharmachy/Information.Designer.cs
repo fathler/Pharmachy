@@ -57,7 +57,7 @@
             this.patienceİnfoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.patienceİnfoButton.ForeColor = System.Drawing.Color.Transparent;
             this.patienceİnfoButton.Image = ((System.Drawing.Image)(resources.GetObject("patienceİnfoButton.Image")));
-            this.patienceİnfoButton.Location = new System.Drawing.Point(398, 337);
+            this.patienceİnfoButton.Location = new System.Drawing.Point(398, 375);
             this.patienceİnfoButton.Name = "patienceİnfoButton";
             this.patienceİnfoButton.Size = new System.Drawing.Size(198, 65);
             this.patienceİnfoButton.TabIndex = 11;
@@ -80,7 +80,7 @@
             this.MedicineinfoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.MedicineinfoButton.ForeColor = System.Drawing.Color.Transparent;
             this.MedicineinfoButton.Image = ((System.Drawing.Image)(resources.GetObject("MedicineinfoButton.Image")));
-            this.MedicineinfoButton.Location = new System.Drawing.Point(202, 337);
+            this.MedicineinfoButton.Location = new System.Drawing.Point(202, 375);
             this.MedicineinfoButton.Name = "MedicineinfoButton";
             this.MedicineinfoButton.Size = new System.Drawing.Size(190, 63);
             this.MedicineinfoButton.TabIndex = 12;
@@ -103,7 +103,7 @@
             this.prescriptioninfobutton.ForeColor = System.Drawing.Color.Transparent;
             this.prescriptioninfobutton.Image = ((System.Drawing.Image)(resources.GetObject("prescriptioninfobutton.Image")));
             this.prescriptioninfobutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.prescriptioninfobutton.Location = new System.Drawing.Point(12, 337);
+            this.prescriptioninfobutton.Location = new System.Drawing.Point(12, 375);
             this.prescriptioninfobutton.Name = "prescriptioninfobutton";
             this.prescriptioninfobutton.Size = new System.Drawing.Size(184, 63);
             this.prescriptioninfobutton.TabIndex = 13;
@@ -118,7 +118,7 @@
             this.PatienceIDinfotext.BackColor = System.Drawing.SystemColors.Control;
             this.PatienceIDinfotext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.PatienceIDinfotext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.PatienceIDinfotext.Location = new System.Drawing.Point(435, 295);
+            this.PatienceIDinfotext.Location = new System.Drawing.Point(435, 333);
             this.PatienceIDinfotext.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.PatienceIDinfotext.Name = "PatienceIDinfotext";
             this.PatienceIDinfotext.Size = new System.Drawing.Size(174, 17);
@@ -130,7 +130,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(432, 316);
+            this.label3.Location = new System.Drawing.Point(432, 354);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(93, 18);
@@ -142,7 +142,7 @@
             this.MedicineNoinfoText.BackColor = System.Drawing.SystemColors.Control;
             this.MedicineNoinfoText.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MedicineNoinfoText.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.MedicineNoinfoText.Location = new System.Drawing.Point(230, 295);
+            this.MedicineNoinfoText.Location = new System.Drawing.Point(230, 333);
             this.MedicineNoinfoText.Margin = new System.Windows.Forms.Padding(4);
             this.MedicineNoinfoText.Name = "MedicineNoinfoText";
             this.MedicineNoinfoText.Size = new System.Drawing.Size(147, 17);
@@ -153,7 +153,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(227, 316);
+            this.label1.Location = new System.Drawing.Point(227, 354);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(130, 13);
@@ -165,7 +165,7 @@
             this.PrescriptionNoinfotext.BackColor = System.Drawing.SystemColors.Control;
             this.PrescriptionNoinfotext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.PrescriptionNoinfotext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.PrescriptionNoinfotext.Location = new System.Drawing.Point(22, 296);
+            this.PrescriptionNoinfotext.Location = new System.Drawing.Point(22, 334);
             this.PrescriptionNoinfotext.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.PrescriptionNoinfotext.Name = "PrescriptionNoinfotext";
             this.PrescriptionNoinfotext.Size = new System.Drawing.Size(174, 17);
@@ -177,7 +177,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label13.Location = new System.Drawing.Point(19, 311);
+            this.label13.Location = new System.Drawing.Point(19, 349);
             this.label13.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(118, 18);
@@ -189,7 +189,7 @@
             this.informationDatagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.informationDatagridview.Location = new System.Drawing.Point(12, 12);
             this.informationDatagridview.Name = "informationDatagridview";
-            this.informationDatagridview.Size = new System.Drawing.Size(776, 258);
+            this.informationDatagridview.Size = new System.Drawing.Size(776, 314);
             this.informationDatagridview.TabIndex = 119;
             // 
             // pharmacistinfoButton
@@ -204,7 +204,7 @@
             this.pharmacistinfoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.pharmacistinfoButton.ForeColor = System.Drawing.Color.Transparent;
             this.pharmacistinfoButton.Image = ((System.Drawing.Image)(resources.GetObject("pharmacistinfoButton.Image")));
-            this.pharmacistinfoButton.Location = new System.Drawing.Point(602, 336);
+            this.pharmacistinfoButton.Location = new System.Drawing.Point(602, 374);
             this.pharmacistinfoButton.Name = "pharmacistinfoButton";
             this.pharmacistinfoButton.Size = new System.Drawing.Size(198, 65);
             this.pharmacistinfoButton.TabIndex = 120;
@@ -219,7 +219,7 @@
             this.pharmacistsinfotext.BackColor = System.Drawing.SystemColors.Control;
             this.pharmacistsinfotext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.pharmacistsinfotext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.pharmacistsinfotext.Location = new System.Drawing.Point(614, 295);
+            this.pharmacistsinfotext.Location = new System.Drawing.Point(614, 333);
             this.pharmacistsinfotext.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.pharmacistsinfotext.Name = "pharmacistsinfotext";
             this.pharmacistsinfotext.Size = new System.Drawing.Size(174, 17);
@@ -231,7 +231,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(611, 316);
+            this.label2.Location = new System.Drawing.Point(611, 354);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 18);
@@ -242,7 +242,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(805, 450);
+            this.ClientSize = new System.Drawing.Size(811, 456);
             this.Controls.Add(this.pharmacistsinfotext);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pharmacistinfoButton);
@@ -257,7 +257,7 @@
             this.Controls.Add(this.MedicineinfoButton);
             this.Controls.Add(this.patienceİnfoButton);
             this.Name = "Information";
-            this.Text = "Information";
+            this.Text = "İnformation";
             this.Load += new System.EventHandler(this.Information_Load);
             ((System.ComponentModel.ISupportInitialize)(this.informationDatagridview)).EndInit();
             this.ResumeLayout(false);

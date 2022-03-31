@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 using PharmachyDAL;
 
 namespace Pharmachy
@@ -184,9 +183,5 @@ namespace Pharmachy
             //con.Close();
         }
 
-        private void ilacguncellebutton_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
