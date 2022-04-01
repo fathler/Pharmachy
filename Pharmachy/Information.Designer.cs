@@ -103,7 +103,7 @@
             this.prescriptioninfobutton.ForeColor = System.Drawing.Color.Transparent;
             this.prescriptioninfobutton.Image = ((System.Drawing.Image)(resources.GetObject("prescriptioninfobutton.Image")));
             this.prescriptioninfobutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.prescriptioninfobutton.Location = new System.Drawing.Point(12, 375);
+            this.prescriptioninfobutton.Location = new System.Drawing.Point(12, 377);
             this.prescriptioninfobutton.Name = "prescriptioninfobutton";
             this.prescriptioninfobutton.Size = new System.Drawing.Size(184, 63);
             this.prescriptioninfobutton.TabIndex = 13;

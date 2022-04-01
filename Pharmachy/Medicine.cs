@@ -131,6 +131,7 @@ namespace Pharmachy
             //SqlConnection con = new SqlConnection("Server=Z36-02\\SQLEXPRESS;Database=db_eczane;Integrated Security=true");
             //SqlCommand com = new SqlCommand("INSERT INTO [dbo].[tblilaclar]([ilacBarkod],[ilacAd],[ilacFiyat],[UreticiFirmaID],[ilacKDVOran],[ilacStokAdet],[TurID],[ilacReceteliMi],[ilacAcıklama],[ilacDepoFirma]) VALUES (@ilacBarkod, @ilacAd, @ilacFiyat, @UreticiFirmaID, @ilacKDVOran, @ilacStokAdet, @TurID, @ilacReceteliMi, @ilacAcıklama, @ilacDepoFirma)",con);
             SqlParameter[] Degerler = new SqlParameter[10];
+            
             Degerler[0] = new SqlParameter("@ilacBarkod",ilacbarkodText.Text);
             Degerler[1] = new SqlParameter("@ilacAd",ilacadtext.Text);
             Degerler[2] = new SqlParameter("@ilacFiyat",ilacfiyattext.Text);

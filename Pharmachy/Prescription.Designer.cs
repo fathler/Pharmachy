@@ -45,6 +45,8 @@
             this.ParaustuLabel = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.sPanel1 = new Pharmachy.Components.SPanel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.ilacSatisBUTTON = new Pharmachy.Components.CustomButton();
             this.ReceteİlacCombo = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -58,8 +60,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.İlacSatisButton = new Pharmachy.Components.CustomButton();
-            this.label15 = new System.Windows.Forms.Label();
-            this.ilacSatisBUTTON = new Pharmachy.Components.CustomButton();
+            this.ilaceklemelistview = new System.Windows.Forms.ListView();
+            this.ilaclwekleme = new Pharmachy.Components.CustomButton();
             this.sPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,7 +70,7 @@
             this.musteriTelefontext.BackColor = System.Drawing.SystemColors.Control;
             this.musteriTelefontext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.musteriTelefontext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.musteriTelefontext.Location = new System.Drawing.Point(119, 316);
+            this.musteriTelefontext.Location = new System.Drawing.Point(48, 316);
             this.musteriTelefontext.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.musteriTelefontext.Name = "musteriTelefontext";
             this.musteriTelefontext.Size = new System.Drawing.Size(174, 17);
@@ -81,7 +83,7 @@
             this.MusteriEPostatext.BackColor = System.Drawing.SystemColors.Control;
             this.MusteriEPostatext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MusteriEPostatext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.MusteriEPostatext.Location = new System.Drawing.Point(120, 381);
+            this.MusteriEPostatext.Location = new System.Drawing.Point(49, 381);
             this.MusteriEPostatext.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.MusteriEPostatext.Name = "MusteriEPostatext";
             this.MusteriEPostatext.Size = new System.Drawing.Size(174, 17);
@@ -94,7 +96,7 @@
             this.musteriBakiyetext.BackColor = System.Drawing.SystemColors.Control;
             this.musteriBakiyetext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.musteriBakiyetext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.musteriBakiyetext.Location = new System.Drawing.Point(119, 251);
+            this.musteriBakiyetext.Location = new System.Drawing.Point(48, 251);
             this.musteriBakiyetext.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.musteriBakiyetext.Name = "musteriBakiyetext";
             this.musteriBakiyetext.Size = new System.Drawing.Size(174, 17);
@@ -107,7 +109,7 @@
             this.musteriAdrestext.BackColor = System.Drawing.SystemColors.Control;
             this.musteriAdrestext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.musteriAdrestext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.musteriAdrestext.Location = new System.Drawing.Point(120, 182);
+            this.musteriAdrestext.Location = new System.Drawing.Point(49, 182);
             this.musteriAdrestext.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.musteriAdrestext.Name = "musteriAdrestext";
             this.musteriAdrestext.Size = new System.Drawing.Size(174, 17);
@@ -120,7 +122,7 @@
             this.musteriTctext.BackColor = System.Drawing.SystemColors.Control;
             this.musteriTctext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.musteriTctext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.musteriTctext.Location = new System.Drawing.Point(120, 122);
+            this.musteriTctext.Location = new System.Drawing.Point(49, 122);
             this.musteriTctext.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.musteriTctext.Name = "musteriTctext";
             this.musteriTctext.Size = new System.Drawing.Size(174, 17);
@@ -133,7 +135,7 @@
             this.musteriSoyadıtext.BackColor = System.Drawing.SystemColors.Control;
             this.musteriSoyadıtext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.musteriSoyadıtext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.musteriSoyadıtext.Location = new System.Drawing.Point(120, 68);
+            this.musteriSoyadıtext.Location = new System.Drawing.Point(49, 68);
             this.musteriSoyadıtext.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.musteriSoyadıtext.Name = "musteriSoyadıtext";
             this.musteriSoyadıtext.Size = new System.Drawing.Size(174, 17);
@@ -146,7 +148,7 @@
             this.musteriAdıText.BackColor = System.Drawing.SystemColors.Control;
             this.musteriAdıText.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.musteriAdıText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.musteriAdıText.Location = new System.Drawing.Point(120, 11);
+            this.musteriAdıText.Location = new System.Drawing.Point(49, 13);
             this.musteriAdıText.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.musteriAdıText.Name = "musteriAdıText";
             this.musteriAdıText.Size = new System.Drawing.Size(174, 17);
@@ -158,7 +160,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(116, 337);
+            this.label8.Location = new System.Drawing.Point(45, 337);
             this.label8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(183, 18);
@@ -170,7 +172,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(115, 406);
+            this.label6.Location = new System.Drawing.Point(44, 406);
             this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(188, 18);
@@ -182,7 +184,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(116, 272);
+            this.label5.Location = new System.Drawing.Point(45, 272);
             this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(183, 18);
@@ -194,7 +196,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(116, 212);
+            this.label4.Location = new System.Drawing.Point(45, 212);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(183, 18);
@@ -206,7 +208,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(116, 146);
+            this.label3.Location = new System.Drawing.Point(45, 146);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(183, 18);
@@ -218,7 +220,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(116, 91);
+            this.label2.Location = new System.Drawing.Point(45, 91);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(183, 18);
@@ -230,7 +232,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(116, 34);
+            this.label1.Location = new System.Drawing.Point(45, 34);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(183, 18);
@@ -242,26 +244,28 @@
             // 
             this.ParaustuLabel.AutoSize = true;
             this.ParaustuLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ParaustuLabel.Location = new System.Drawing.Point(13, 388);
+            this.ParaustuLabel.Location = new System.Drawing.Point(393, 439);
             this.ParaustuLabel.Name = "ParaustuLabel";
-            this.ParaustuLabel.Size = new System.Drawing.Size(86, 18);
+            this.ParaustuLabel.Size = new System.Drawing.Size(107, 18);
             this.ParaustuLabel.TabIndex = 120;
-            this.ParaustuLabel.Text = "Para Üstü...";
+            this.ParaustuLabel.Text = "Para üstünüz...";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(13, 404);
+            this.label7.Location = new System.Drawing.Point(393, 454);
             this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(144, 18);
+            this.label7.Size = new System.Drawing.Size(123, 18);
             this.label7.TabIndex = 121;
-            this.label7.Text = "_________________";
+            this.label7.Text = "-----------------------";
             // 
             // sPanel1
             // 
             this.sPanel1.BorderColor = System.Drawing.Color.White;
+            this.sPanel1.Controls.Add(this.ilaclwekleme);
+            this.sPanel1.Controls.Add(this.ilaceklemelistview);
             this.sPanel1.Controls.Add(this.label15);
             this.sPanel1.Controls.Add(this.ilacSatisBUTTON);
             this.sPanel1.Controls.Add(this.ReceteİlacCombo);
@@ -279,10 +283,40 @@
             this.sPanel1.Controls.Add(this.label12);
             this.sPanel1.Controls.Add(this.label13);
             this.sPanel1.Edge = 20;
-            this.sPanel1.Location = new System.Drawing.Point(471, -1);
+            this.sPanel1.Location = new System.Drawing.Point(237, 12);
             this.sPanel1.Name = "sPanel1";
-            this.sPanel1.Size = new System.Drawing.Size(200, 515);
+            this.sPanel1.Size = new System.Drawing.Size(550, 493);
             this.sPanel1.TabIndex = 123;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label15.Location = new System.Drawing.Point(493, 441);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(23, 16);
+            this.label15.TabIndex = 125;
+            this.label15.Text = "TL";
+            // 
+            // ilacSatisBUTTON
+            // 
+            this.ilacSatisBUTTON.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.ilacSatisBUTTON.BackgroundColor = System.Drawing.Color.DarkSeaGreen;
+            this.ilacSatisBUTTON.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.ilacSatisBUTTON.BorderRadius = 25;
+            this.ilacSatisBUTTON.BorderSize = 0;
+            this.ilacSatisBUTTON.FlatAppearance.BorderSize = 0;
+            this.ilacSatisBUTTON.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ilacSatisBUTTON.ForeColor = System.Drawing.Color.Black;
+            this.ilacSatisBUTTON.Location = new System.Drawing.Point(215, 412);
+            this.ilacSatisBUTTON.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ilacSatisBUTTON.Name = "ilacSatisBUTTON";
+            this.ilacSatisBUTTON.Size = new System.Drawing.Size(171, 60);
+            this.ilacSatisBUTTON.TabIndex = 134;
+            this.ilacSatisBUTTON.Text = "İlaç Satış";
+            this.ilacSatisBUTTON.TextColor = System.Drawing.Color.Black;
+            this.ilacSatisBUTTON.UseVisualStyleBackColor = false;
+            this.ilacSatisBUTTON.Click += new System.EventHandler(this.ilacSatisBUTTON_Click_1);
             // 
             // ReceteİlacCombo
             // 
@@ -290,7 +324,7 @@
             this.ReceteİlacCombo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ReceteİlacCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ReceteİlacCombo.FormattingEnabled = true;
-            this.ReceteİlacCombo.Location = new System.Drawing.Point(12, 222);
+            this.ReceteİlacCombo.Location = new System.Drawing.Point(218, 303);
             this.ReceteİlacCombo.Name = "ReceteİlacCombo";
             this.ReceteİlacCombo.Size = new System.Drawing.Size(145, 26);
             this.ReceteİlacCombo.TabIndex = 124;
@@ -300,7 +334,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label14.Location = new System.Drawing.Point(6, 251);
+            this.label14.Location = new System.Drawing.Point(212, 332);
             this.label14.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(183, 18);
@@ -311,7 +345,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(3, 201);
+            this.label11.Location = new System.Drawing.Point(6, 458);
             this.label11.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(183, 18);
@@ -323,7 +357,7 @@
             this.ReceteMusteriIDtxt.BackColor = System.Drawing.SystemColors.Control;
             this.ReceteMusteriIDtxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ReceteMusteriIDtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ReceteMusteriIDtxt.Location = new System.Drawing.Point(12, 180);
+            this.ReceteMusteriIDtxt.Location = new System.Drawing.Point(9, 441);
             this.ReceteMusteriIDtxt.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.ReceteMusteriIDtxt.Name = "ReceteMusteriIDtxt";
             this.ReceteMusteriIDtxt.Size = new System.Drawing.Size(174, 17);
@@ -334,7 +368,7 @@
             // 
             this.recetetarihpicker.CalendarMonthBackground = System.Drawing.SystemColors.ScrollBar;
             this.recetetarihpicker.CalendarTrailingForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.recetetarihpicker.Location = new System.Drawing.Point(12, 133);
+            this.recetetarihpicker.Location = new System.Drawing.Point(13, 396);
             this.recetetarihpicker.Name = "recetetarihpicker";
             this.recetetarihpicker.Size = new System.Drawing.Size(173, 20);
             this.recetetarihpicker.TabIndex = 130;
@@ -344,7 +378,7 @@
             this.receteTutartext.BackColor = System.Drawing.SystemColors.Control;
             this.receteTutartext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.receteTutartext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.receteTutartext.Location = new System.Drawing.Point(15, 284);
+            this.receteTutartext.Location = new System.Drawing.Point(215, 361);
             this.receteTutartext.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.receteTutartext.Name = "receteTutartext";
             this.receteTutartext.Size = new System.Drawing.Size(174, 17);
@@ -357,7 +391,7 @@
             this.receteDoktortext.BackColor = System.Drawing.SystemColors.Control;
             this.receteDoktortext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.receteDoktortext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.receteDoktortext.Location = new System.Drawing.Point(15, 79);
+            this.receteDoktortext.Location = new System.Drawing.Point(6, 361);
             this.receteDoktortext.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.receteDoktortext.Name = "receteDoktortext";
             this.receteDoktortext.Size = new System.Drawing.Size(174, 17);
@@ -370,7 +404,7 @@
             this.receteNotext.BackColor = System.Drawing.SystemColors.Control;
             this.receteNotext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.receteNotext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.receteNotext.Location = new System.Drawing.Point(15, 25);
+            this.receteNotext.Location = new System.Drawing.Point(9, 312);
             this.receteNotext.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.receteNotext.Name = "receteNotext";
             this.receteNotext.Size = new System.Drawing.Size(174, 17);
@@ -382,7 +416,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(6, 305);
+            this.label9.Location = new System.Drawing.Point(212, 375);
             this.label9.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(183, 18);
@@ -393,7 +427,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(3, 156);
+            this.label10.Location = new System.Drawing.Point(4, 419);
             this.label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(183, 18);
@@ -404,7 +438,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label12.Location = new System.Drawing.Point(6, 100);
+            this.label12.Location = new System.Drawing.Point(4, 375);
             this.label12.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(183, 18);
@@ -415,7 +449,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label13.Location = new System.Drawing.Point(6, 46);
+            this.label13.Location = new System.Drawing.Point(6, 332);
             this.label13.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(183, 18);
@@ -432,50 +466,50 @@
             this.İlacSatisButton.FlatAppearance.BorderSize = 0;
             this.İlacSatisButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.İlacSatisButton.ForeColor = System.Drawing.Color.Black;
-            this.İlacSatisButton.Location = new System.Drawing.Point(107, 427);
+            this.İlacSatisButton.Location = new System.Drawing.Point(35, 443);
             this.İlacSatisButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.İlacSatisButton.Name = "İlacSatisButton";
-            this.İlacSatisButton.Size = new System.Drawing.Size(187, 87);
+            this.İlacSatisButton.Size = new System.Drawing.Size(187, 51);
             this.İlacSatisButton.TabIndex = 95;
             this.İlacSatisButton.Text = "Hasta Kayıt";
             this.İlacSatisButton.TextColor = System.Drawing.Color.Black;
             this.İlacSatisButton.UseVisualStyleBackColor = false;
             this.İlacSatisButton.Click += new System.EventHandler(this.İlacSatisButton_Click);
             // 
-            // label15
+            // ilaceklemelistview
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label15.Location = new System.Drawing.Point(124, 390);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(23, 16);
-            this.label15.TabIndex = 125;
-            this.label15.Text = "TL";
+            this.ilaceklemelistview.HideSelection = false;
+            this.ilaceklemelistview.Location = new System.Drawing.Point(4, 3);
+            this.ilaceklemelistview.Name = "ilaceklemelistview";
+            this.ilaceklemelistview.Size = new System.Drawing.Size(545, 275);
+            this.ilaceklemelistview.TabIndex = 135;
+            this.ilaceklemelistview.UseCompatibleStateImageBehavior = false;
             // 
-            // ilacSatisBUTTON
+            // ilaclwekleme
             // 
-            this.ilacSatisBUTTON.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.ilacSatisBUTTON.BackgroundColor = System.Drawing.Color.DarkSeaGreen;
-            this.ilacSatisBUTTON.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.ilacSatisBUTTON.BorderRadius = 25;
-            this.ilacSatisBUTTON.BorderSize = 0;
-            this.ilacSatisBUTTON.FlatAppearance.BorderSize = 0;
-            this.ilacSatisBUTTON.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ilacSatisBUTTON.ForeColor = System.Drawing.Color.Black;
-            this.ilacSatisBUTTON.Location = new System.Drawing.Point(9, 425);
-            this.ilacSatisBUTTON.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.ilacSatisBUTTON.Name = "ilacSatisBUTTON";
-            this.ilacSatisBUTTON.Size = new System.Drawing.Size(187, 87);
-            this.ilacSatisBUTTON.TabIndex = 134;
-            this.ilacSatisBUTTON.Text = "İlaç Satış";
-            this.ilacSatisBUTTON.TextColor = System.Drawing.Color.Black;
-            this.ilacSatisBUTTON.UseVisualStyleBackColor = false;
+            this.ilaclwekleme.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.ilaclwekleme.BackgroundColor = System.Drawing.Color.DarkSeaGreen;
+            this.ilaclwekleme.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.ilaclwekleme.BorderRadius = 25;
+            this.ilaclwekleme.BorderSize = 0;
+            this.ilaclwekleme.FlatAppearance.BorderSize = 0;
+            this.ilaclwekleme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ilaclwekleme.ForeColor = System.Drawing.Color.Black;
+            this.ilaclwekleme.Location = new System.Drawing.Point(405, 291);
+            this.ilaclwekleme.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ilaclwekleme.Name = "ilaclwekleme";
+            this.ilaclwekleme.Size = new System.Drawing.Size(120, 52);
+            this.ilaclwekleme.TabIndex = 136;
+            this.ilaclwekleme.Text = "İlaç Ekle";
+            this.ilaclwekleme.TextColor = System.Drawing.Color.Black;
+            this.ilaclwekleme.UseVisualStyleBackColor = false;
+            this.ilaclwekleme.Click += new System.EventHandler(this.ilaclwekleme_Click);
             // 
             // Prescription
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(838, 552);
+            this.ClientSize = new System.Drawing.Size(791, 540);
             this.Controls.Add(this.sPanel1);
             this.Controls.Add(this.musteriTelefontext);
             this.Controls.Add(this.MusteriEPostatext);
@@ -535,5 +569,7 @@
         private System.Windows.Forms.ComboBox ReceteİlacCombo;
         private System.Windows.Forms.Label label15;
         private Components.CustomButton ilacSatisBUTTON;
+        private System.Windows.Forms.ListView ilaceklemelistview;
+        private Components.CustomButton ilaclwekleme;
     }
 }

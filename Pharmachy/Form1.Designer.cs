@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.MedicinePanel = new Pharmachy.Components.SPanel();
-            this.customButton1 = new Pharmachy.Components.CustomButton();
             this.sPanel2 = new Pharmachy.Components.SPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,10 +37,8 @@
             this.sPanel1 = new Pharmachy.Components.SPanel();
             this.Patiencebutton = new Pharmachy.Components.CustomButton();
             this.prescriptionbutton = new Pharmachy.Components.CustomButton();
-            this.customButton3 = new Pharmachy.Components.CustomButton();
             this.Staffbutton = new Pharmachy.Components.CustomButton();
             this.MedicineButton = new Pharmachy.Components.CustomButton();
-            this.MedicinePanel.SuspendLayout();
             this.sPanel2.SuspendLayout();
             this.sPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -50,33 +47,11 @@
             // 
             this.MedicinePanel.BackColor = System.Drawing.SystemColors.ControlLight;
             this.MedicinePanel.BorderColor = System.Drawing.Color.White;
-            this.MedicinePanel.Controls.Add(this.customButton1);
             this.MedicinePanel.Edge = 20;
             this.MedicinePanel.Location = new System.Drawing.Point(213, 82);
             this.MedicinePanel.Name = "MedicinePanel";
             this.MedicinePanel.Size = new System.Drawing.Size(806, 532);
             this.MedicinePanel.TabIndex = 11;
-            // 
-            // customButton1
-            // 
-            this.customButton1.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.customButton1.BackgroundColor = System.Drawing.Color.DarkSeaGreen;
-            this.customButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.customButton1.BorderRadius = 25;
-            this.customButton1.BorderSize = 0;
-            this.customButton1.FlatAppearance.BorderSize = 0;
-            this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.customButton1.ForeColor = System.Drawing.Color.Transparent;
-            this.customButton1.Image = ((System.Drawing.Image)(resources.GetObject("customButton1.Image")));
-            this.customButton1.Location = new System.Drawing.Point(556, 410);
-            this.customButton1.Name = "customButton1";
-            this.customButton1.Size = new System.Drawing.Size(198, 65);
-            this.customButton1.TabIndex = 10;
-            this.customButton1.Text = "Patience";
-            this.customButton1.TextColor = System.Drawing.Color.Transparent;
-            this.customButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.customButton1.UseVisualStyleBackColor = false;
             // 
             // sPanel2
             // 
@@ -132,7 +107,6 @@
             this.sPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.sPanel1.Controls.Add(this.Patiencebutton);
             this.sPanel1.Controls.Add(this.prescriptionbutton);
-            this.sPanel1.Controls.Add(this.customButton3);
             this.sPanel1.Controls.Add(this.Staffbutton);
             this.sPanel1.Controls.Add(this.MedicineButton);
             this.sPanel1.Edge = 20;
@@ -185,25 +159,6 @@
             this.prescriptionbutton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.prescriptionbutton.UseVisualStyleBackColor = false;
             this.prescriptionbutton.Click += new System.EventHandler(this.prescriptionbutton_Click);
-            // 
-            // customButton3
-            // 
-            this.customButton3.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.customButton3.BackgroundColor = System.Drawing.Color.DarkSeaGreen;
-            this.customButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.customButton3.BorderRadius = 25;
-            this.customButton3.BorderSize = 0;
-            this.customButton3.FlatAppearance.BorderSize = 0;
-            this.customButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.customButton3.ForeColor = System.Drawing.Color.Transparent;
-            this.customButton3.Location = new System.Drawing.Point(5, 458);
-            this.customButton3.Name = "customButton3";
-            this.customButton3.Size = new System.Drawing.Size(198, 54);
-            this.customButton3.TabIndex = 7;
-            this.customButton3.Text = "customButton3";
-            this.customButton3.TextColor = System.Drawing.Color.Transparent;
-            this.customButton3.UseVisualStyleBackColor = false;
             // 
             // Staffbutton
             // 
@@ -261,7 +216,6 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.MedicinePanel.ResumeLayout(false);
             this.sPanel2.ResumeLayout(false);
             this.sPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -271,7 +225,6 @@
         #endregion
         private Components.CustomButton prescriptionbutton;
         private Components.CustomButton Staffbutton;
-        private Components.CustomButton customButton3;
         private Components.CustomButton Patiencebutton;
         private Components.CustomButton MedicineButton;
         private Components.SPanel sPanel1;
@@ -280,7 +233,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private Components.SPanel MedicinePanel;
-        private Components.CustomButton customButton1;
     }
 }
 

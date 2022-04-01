@@ -22,6 +22,11 @@ namespace Pharmachy
         private void Prescription_Load(object sender, EventArgs e)
         {
             
+            ilaceklemelistview.Items.Clear();
+            ilaceklemelistview.GridLines=true;
+            ilaceklemelistview.View = View.Details;
+            ListView item = new ListView();
+
             SqlDataReader asd= HelperSql.SqlOkuyucuDondurWithSp("sp_ilactablodoldurma",true,null);
             {
                 
@@ -34,7 +39,7 @@ namespace Pharmachy
                 }
                 asd.Close();
             }
-           sPanel1.Enabled = false;
+          // sPanel1.Enabled = false;
         }
 
         private void İlacSatisButton_Click(object sender, EventArgs e)
@@ -42,14 +47,15 @@ namespace Pharmachy
             SqlParameter[] parameters = new SqlParameter[7];
             parameters[0] = new SqlParameter("@musteriAd", musteriAdıText.Text);
             parameters[1] = new SqlParameter("@musteriSoyad", musteriSoyadıtext.Text);
-            parameters[2] = new SqlParameter("@musteriTc", musteriTctext.Text);
+            parameters[2] = new SqlParameter("@musteriTC", musteriTctext.Text);
             parameters[3] = new SqlParameter("@musteriAdres", musteriAdrestext.Text);
             parameters[4] = new SqlParameter("@musteriBakiye", musteriBakiyetext.Text);
             parameters[5] = new SqlParameter("@musteriTelefon", musteriTelefontext.Text);
             parameters[6] = new SqlParameter("@MusteriEPosta", MusteriEPostatext.Text);
             int ess = Convert.ToInt32(HelperSql.SqlNesneDondurWithSP("sp_MusteriKayit",true, parameters));
             paraustu = Convert.ToInt32(musteriBakiyetext.Text);
-            string Rdr = (HelperSql.SqlNesneDondurWithSP("select musteriID from [dbo].[tblMusteriler] where @musteriTc = " + musteriTctext.Text,false,null).ToString());
+            MessageBox.Show(ess > 0 ? "Musteri Basariyla Eklendi " : "Bir şeyler yolunda gitmedi");
+            //string Rdr = (HelperSql.SqlNesneDondurWithSP("select musteriID from [dbo].[tblMusteriler] where @musteriTc = " + musteriTctext.Text,false,null).ToString());
             //if(Rdr.HasRows)
             //{
             //    ReceteMusteriIDtxt.Text = (Rdr["musteriID"].ToString());
@@ -61,19 +67,7 @@ namespace Pharmachy
             sPanel1.Enabled = true;
         }
 
-        private void ilacSatisBUTTON_Click(object sender, EventArgs e)
-        {
-            SqlParameter[] parameters1 = new SqlParameter[6];
-            parameters1[0] = new SqlParameter("@receteNo", receteNotext.Text);
-            parameters1[1] = new SqlParameter("@receteDoktor", receteDoktortext.Text);
-            parameters1[2] = new SqlParameter("@receteTarih", recetetarihpicker.Value);
-            parameters1[3] = new SqlParameter("@musteriID", ReceteMusteriIDtxt.Text);
-            parameters1[4] = new SqlParameter("@ilacID", ReceteİlacCombo.SelectedIndex);
-            parameters1[5] = new SqlParameter("@receteTutar", receteTutartext.Text);
-            HelperSql.SqlGeriDondurmezWithSp("sp_YeniReceteKayit",true,parameters1);
-            //ParaustuLabel.Text =  Convert.ToInt32(musteriBakiyetext.Text) - Convert.ToInt32(receteTutartext.Text);
-        }
-
+        
         private void musteriAdıText_Click(object sender, EventArgs e)
         {
            musteriAdıText.Clear();
@@ -159,6 +153,35 @@ namespace Pharmachy
 
         }
 
-        
+        private void ilacSatisBUTTON_Click_1(object sender, EventArgs e)
+        {
+            SqlParameter[] parameters1 = new SqlParameter[6];
+            parameters1[0] = new SqlParameter("@receteNo", receteNotext.Text);
+            parameters1[1] = new SqlParameter("@receteDoktor", receteDoktortext.Text);
+            parameters1[2] = new SqlParameter("@receteTarih", recetetarihpicker.Value);
+            parameters1[3] = new SqlParameter("@musteriID", ReceteMusteriIDtxt.Text);
+            parameters1[4] = new SqlParameter("@ilacID", ReceteİlacCombo.SelectedIndex);
+            parameters1[5] = new SqlParameter("@receteTutar", receteTutartext.Text);
+            int ess = Convert.ToInt32(HelperSql.SqlNesneDondurWithSP("sp_YeniReceteKayit", true, parameters1));
+            MessageBox.Show(ess > 0 ? "Done " : "Someting went wrong");
+            int paraustu = (Convert.ToInt32(musteriBakiyetext.Text)) - (Convert.ToInt32(receteTutartext.Text));
+            ParaustuLabel.Text = paraustu.ToString();
+        }
+
+        private void ilaclwekleme_Click(object sender, EventArgs e)
+        {
+           SqlDataReader okuyucu = HelperSql.SqlOkuyucuDondurWithSp("Select * from tbl_ilaclar where ilacAd = "+(ReceteİlacCombo.SelectedItem).ToString(), false, null);
+            if (okuyucu.HasRows)
+            {
+                while (okuyucu.Read())
+                {
+                    ListViewItem item = new ListViewItem("ilacID");
+                    item.SubItems.Add("ilacBarkod");
+
+                }
+            }
+            //ilaceklemelistview.Items.Add
+            //    (ReceteİlacCombo.SelectedItem.ToString())
+        }
     }
 }
